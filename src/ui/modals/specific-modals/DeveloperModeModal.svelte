@@ -10,8 +10,7 @@
   <h4 slot="header">How to enable developer mode</h4>
   <div slot="content" style="overflow-y: auto">
     <p>
-      Please select the operating system that is currently installed on your
-      device to learn how to enable developer mode.
+      请选择当前设备安装的系统.
     </p>
     <div class="card">
       <div class="card-body">
@@ -19,23 +18,17 @@
         <div class="row">
           <div class="col-6">
             <p>
-              This is done from System Settings.
+              通过系统设置完成.
               <br />
             </p>
             <ol>
               <li>
-                Open System Settings, go to About this Phone, and then Developer
+                打开系统设置, 进入关于手机, 然后进入开发者设置
                 Mode.
               </li>
               <li>
-                The adb service will be enabled if 'developer mode' is selected.
-                Note that you must have some sort of lock screen security
-                enabled (pin or password), and 'Developer mode' will be greyed
-                out if that's not the case.
-              </li>
-              <li>
-                The 'Lock Security' menu there can be used to set a pin or
-                password.
+                adb将会启动如果你打开了‘开发者模式’.
+                请注意，您必须具有某种锁屏密码.
               </li>
             </ol>
           </div>
@@ -55,29 +48,24 @@
         <div class="row">
           <div class="col-6">
             <p>
-              This is done from System Settings.
+              通过系统设置完成.
               <br />
             </p>
             <ol>
               <li>
-                Go to the settings menu, scroll down and select "About phone".
+                打开系统设置，滑到最下面 "关于手机".
               </li>
               <li>
-                Scroll down to the bottom again, where you see "Build number."
+                再次滑动的最下面, 当看见 "构建版本."
               </li>
               <li>
-                Tap it seven (7) times. After the third tap, you'll see a dialog
-                that says you're four taps away from being a developer. Keep on
-                tapping until you see a dialog saying "You're now a developer"
+                按下七次直到看见 "你正处于开发者模式"
               </li>
               <li>
-                Now go back to the Settings menu and find "developer settings"
-                (sometimes called "developer options"), Tap that.
+                然后返回并找到 "开发者设置"
               </li>
               <li>
-                Enable "USB debugging", "ADB" or "Android Debug Bridge" option.
-                If you see it, also enable the "allow OEM unlock" option, but
-                that is not available on every device.
+                打开usb调试和oem解锁
               </li>
             </ol>
           </div>

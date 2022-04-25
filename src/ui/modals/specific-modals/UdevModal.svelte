@@ -35,10 +35,10 @@
   <div slot="actions">
     <button class="btn btn-default" on:click={close}>Dismiss</button>
     <button class="btn btn-default" on:click={() => dismissUdev(false)}
-      >Don't ask me again</button
+      >不在</button
     >
     <button class="btn btn-primary" on:click={() => dismissUdev(true)}
-      >Set up rules automatically.</button
+      >自动配置规则.</button
     >
   </div>
 </Modal>

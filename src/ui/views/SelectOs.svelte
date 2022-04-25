@@ -29,21 +29,21 @@
     <p>
       <a
         href={`https://devices.ubuntu-touch.io/device/${$installConfigData.codename}`}
-        >about this device</a
+        >关于此设备</a
       >
       <a
         href={`https://github.com/ubports/installer-configs/blob/master/v2/devices/${$installConfigData.codename}.yml`}
-        >view config file</a
+        >查看配置文件</a
       >
     </p>
     <p>
-      Please make sure you enabled <a
+      请确认你已开启 <a
         href
         on:click|preventDefault={() => showDeveloperModeModal.set(true)}
-        >developer mode and OEM unlocking</a
+        >开发者模式和oem解锁</a
       >.
     </p>
-    <p>What operating system do you want to install?</p>
+    <p>请选择你需要安装的系统</p>
     <div class="form row">
       <div class="col-3">
         <label for="" class="col-form-label">OS</label>
@@ -63,7 +63,7 @@
       style="width: 100%;"
       on:click={() => handleInstallButton()}
     >
-      Install
+      安装
     </button>
   </div>
 </div>

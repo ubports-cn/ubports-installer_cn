@@ -24,11 +24,11 @@
   <h4 slot="header">Report your result</h4>
   <div slot="content">
     <p>
-      To fix issues in the UBports Installer, it is vital that the developers
-      receive detailed feedback. To make this easier, the installer automates
-      the reporting process. If you're interested in helping us make the UBports
-      Installer better, keep reading! If not, click the button below and we will
-      not bother you again.
+      要解决UBports安装程序中的问题，开发人员必须
+      接受详细的反馈。为了简化这一过程，安装程序会自动执行
+      报告过程。如果你有兴趣帮助我们制作ubport
+      更好，继续阅读！如果没有，请单击下面的按钮，我们将
+      别再打扰你了。
     </p>
     <p>
       The UBports Community uses <a

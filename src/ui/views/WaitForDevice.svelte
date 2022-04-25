@@ -29,30 +29,29 @@
   <div class="col-6">
     <h4>Welcome to the UBports Installer</h4>
     <p>
-      We will walk you through the installation process. Don't worry, it's easy!
+      我们将引导你进入安装过程. 不要担心, 非常简单!
     </p>
     <p>
-      With developer mode enabled, connect your phone, tablet, or smartwatch to
-      the computer. Your device should be detected automatically.
+      请打开开发者模式, 将你的手机, 平板电脑或智能手表连接至此电脑. 你的设备将被自动检测.
     </p>
     <button
       id="btn-modal-dev-mode"
       class="btn btn-primary"
       on:click={() => showDeveloperModeModal.set(true)}
     >
-      How do I enable developer mode?
+      如何打开开发者模式?
     </button>
     <p>
-      If your device is not detected automatically, you can select it manually
-      to proceed. Please note that the UBports Installer will only work on
-      <a href="http://devices.ubuntu-touch.io">supported devices</a>.
+      如果没有自动检测到你的设备, 你可以手动选择. 
+      请注意UBports Installer只支持
+      <a href="http://devices.ubuntu-touch.io">上的设备</a>.
     </p>
     <button
       id="btn-modal-select-device"
       class="btn btn-outline-dark"
       on:click={() => showSelectDeviceModal.set(true)}
     >
-      Select device manually
+      选择设备
     </button>
   </div>
 </div>
