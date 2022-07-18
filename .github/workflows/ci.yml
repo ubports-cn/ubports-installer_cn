@@ -1,13 +1,14 @@
-name: Continuous Integration
+name: build ubports installer
 
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-  release:
-    types:
-      - published
+  workflow_dispatch:
+#  push:
+#    branches: [master]
+#  pull_request:
+#    branches: [master]
+#  release:
+#    types:
+#      - published
 
 jobs:
   prerequisites:
@@ -134,7 +135,6 @@ jobs:
             dist/*.dmg
             dist/*.exe
       - name: upload release assets
-        if: github.event_name == 'release'
         uses: actions/github-script@v2
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
