@@ -11,32 +11,32 @@
     />
   </div>
   <div class="col-6">
-    <h4 style="font-weight: bold;">Device not supported</h4>
+    <h4 style="font-weight: bold;">设备不支持</h4>
     <p>
-      Your device:
+      你的设备:
       <span>{$deviceName}</span>
     </p>
     <p>
-      <b>Sorry</b>
-      , there is no port for this device yet!
+      <b>抱歉</b>
+      , 暂时还不支持这个设备!
     </p>
     <p>
-      See
+      你可以在
       <a href="http://devices.ubuntu-touch.io">devices.ubuntu-touch.io</a>
-      for more info
+      找到更多信息
     </p>
     <hr />
-    <h4 style="font-weight: bold;">You want to try to install anyway?</h4>
+    <h4 style="font-weight: bold;">你还是要尝试安装吗?</h4>
     <p>
-      You can try selecting your device manually, but please only do so if
-      you're sure that your exact model is actually supported! You might also
-      want to <a href="http://devices.ubuntu-touch.io">file a bug</a>.
+      你可以尝试手动选择设备, 
+      但必须确认你的设备已支持! 你可以去
+      <a href="http://devices.ubuntu-touch.io">提交bug</a>.
     </p>
     <button
       class="btn btn-default"
       style="width: 100%;"
       on:click={() => showSelectDeviceModal.set(true)}
-      >Select device manually</button
+      >手动选择设备</button
     >
   </div>
 </div>
