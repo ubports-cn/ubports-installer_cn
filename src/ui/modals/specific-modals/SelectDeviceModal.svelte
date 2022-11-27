@@ -33,18 +33,16 @@
       </div>
     </div>
     <p>
-      Not all <a href="https://devices.ubuntu-touch.io">Ubuntu Touch devices</a>
-      are supported by the UBports Installer yet. You can find installation instructions
-      for devices not listed here on
-      <a href="https://devices.ubuntu-touch.io">devices.ubuntu-touch.io</a>. If
-      you want to help, you can
+      不是所有的 <a href="https://devices.ubuntu-touch.io">Ubuntu Touch 设备</a>
+      都支持 UBports Installer.你可以在这里找到安装说明
+      <a href="https://devices.ubuntu-touch.io">devices.ubuntu-touch.io</a>. 如果你想要帮助我们可以去
       <a href="https://github.com/ubports/installer-configs#readme"
-        >contribute a config file</a
-      > for any device and operating system!
+        >贡献一个配置文件</a
+      > 为所有的设备和系统!
     </p>
     <p>
-      Please do not try to install other devices images on your device. <b
-        >It will not work!</b
+      请不要安装旧的镜像. <b
+        >它不一定能用!</b
       >
     </p>
   </div>

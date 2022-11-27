@@ -31,19 +31,18 @@
     />
   </div>
   <div class="col-6">
-    <h4 style="font-weight: bold;">Manual Download</h4>
+    <h4 style="font-weight: bold;">手动下载</h4>
     <p>
-      The <b>{$manualDownloadGroup}</b> file
-      <b>{$manualDownloadFileData.name}</b> needs to be manually downloaded due to
-      licensing restrictions. Sorry for the inconvenience!
+      <b>{$manualDownloadGroup}</b>
+      <b>{$manualDownloadFileData.name}</b> 由于许可证原因需要手动下载!
     </p>
     <p>
-      Please download the file <b>{$manualDownloadFileData.name}</b> from
+      请下载这些文件 <b>{$manualDownloadFileData.name}</b> 从
       <a href={$manualDownloadFileData.url}>{$manualDownloadFileData.url}</a>.
     </p>
     <p>
-      Once you have it, select it in the file picker and click the button below
-      to continue.
+      下载后, 在文件选择器选择并点击继续
+      
     </p>
     <div class="input-group" style="margin-bottom: 1em;">
       <div class="custom-file">

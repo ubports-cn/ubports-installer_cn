@@ -31,7 +31,7 @@
         on:click|preventDefault={() =>
           $userActionEventObject.sender.send("action:completed")}
       >
-        Continue
+        继续
       </button>
     {/if}
   </div>

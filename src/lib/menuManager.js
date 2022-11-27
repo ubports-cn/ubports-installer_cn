@@ -34,22 +34,22 @@ class MenuManager {
   getMenuTemplate(mainWindow) {
     return [
       {
-        label: "About",
+        label: "关于",
         submenu: [
           {
-            label: "About the UBports Foundation...",
+            label: "关于UBports基金会...",
             click: () => shell.openExternal("https://ubports.com")
           },
           {
-            label: "About Ubuntu Touch...",
+            label: "关于Ubuntu Touch...",
             click: () => shell.openExternal("https://ubuntu-touch.io")
           },
           {
-            label: "Donate",
+            label: "捐助",
             click: () => shell.openExternal("https://ubports.com/donate")
           },
           {
-            label: "Source",
+            label: "源码",
             click: () =>
               shell.openExternal(
                 "https://github.com/ubports/ubports-installer/tree/" +
@@ -57,7 +57,7 @@ class MenuManager {
               )
           },
           {
-            label: "License",
+            label: "开源许可证",
             click: () =>
               shell.openExternal(
                 "https://github.com/ubports/ubports-installer/blob/" +
@@ -68,28 +68,28 @@ class MenuManager {
         ]
       },
       {
-        label: "Window",
+        label: "窗口",
         role: "window",
         submenu: [
           {
-            label: "Minimize",
+            label: "最小化",
             accelerator: "CmdOrCtrl+M",
             role: "minimize"
           },
           {
-            label: "Close",
+            label: "关闭",
             accelerator: "CmdOrCtrl+W",
             role: "close"
           },
           {
-            label: "Quit",
+            label: "退出",
             accelerator: "CmdOrCtrl+Q",
             role: "close"
           }
         ]
       },
       {
-        label: "Tools",
+        label: "工具",
         submenu: [
           {
             label: "Set udev rules",
@@ -98,26 +98,26 @@ class MenuManager {
               packageInfo.package !== "snap" && process.platform === "linux"
           },
           {
-            label: "Report a bug",
+            label: "提交bug",
             click: () => window.send("user:report")
           },
           {
-            label: "Developer tools",
+            label: "开发者工具",
             click: () => mainWindow.webContents.openDevTools()
           },
           {
-            label: "Clean cached files",
+            label: "清除缓存",
             click: () => cache.clean()
           },
           {
-            label: "Open settings config file",
+            label: "打开配置文件",
             click: () => {
               settings.openInEditor();
             },
             visible: settings.size
           },
           {
-            label: "Reset settings",
+            label: "重置设置",
             click: () => {
               settings.clear();
             },
@@ -132,10 +132,10 @@ class MenuManager {
         ]
       },
       {
-        label: "Settings",
+        label: "设置",
         submenu: [
           {
-            label: "Animations",
+            label: "动画",
             checked: settings.get("animations"),
             type: "checkbox",
             click: () => {
@@ -144,7 +144,7 @@ class MenuManager {
             }
           },
           {
-            label: "Show hidden System-Image Channels",
+            label: "显示隐藏的系统镜像通道",
             checked: settings.get("systemimage.showHiddenChannels"),
             type: "checkbox",
             click: () =>
@@ -162,7 +162,7 @@ class MenuManager {
             click: () => settings.set("never.udev", !settings.get("never.udev"))
           },
           {
-            label: "Never ask for windows drivers",
+            label: "不显示驱动提示",
             checked: settings.get("never.windowsDrivers"),
             visible: process.platform === "win32",
             type: "checkbox",
@@ -173,7 +173,7 @@ class MenuManager {
               )
           },
           {
-            label: "Never ask for OPEN-CUTS automatic reporting",
+            label: "不显示OPEN-CUTS自动报告",
             checked: settings.get("never.opencuts"),
             type: "checkbox",
             click: () =>
@@ -189,25 +189,25 @@ class MenuManager {
         label: "Help",
         submenu: [
           {
-            label: "Bug tracker",
+            label: "bug追踪",
             click: () =>
               shell.openExternal(
                 "https://github.com/ubports/ubports-installer/issues"
               )
           },
           {
-            label: "Report a bug",
+            label: "提交bug",
             click: () => window.send("user:report")
           },
           {
-            label: "Troubleshooting",
+            label: "故障排除",
             click: () =>
               shell.openExternal(
                 "https://docs.ubports.com/en/latest/userguide/install.html#troubleshooting"
               )
           },
           {
-            label: "UBports Forums",
+            label: "UBports 论坛",
             click: () => shell.openExternal("https://forums.ubports.com")
           },
           {

@@ -29,50 +29,48 @@
   <h4 slot="header">Yikes!</h4>
   <div slot="content">
     <p>
-      The Installation stopped due to a problem. You can choose to ignore this,
-      or re-start the installation process.
+      由于出现问题，安装已停止。你可以选择忽略这一点，
+      或者重新启动安装过程.
     </p>
     <p>
-      If this continues to happen, please check if you are affected by <a
+      如果这种情况继续发生，请检查您是否有同样的影响 <a
         href="https://github.com/ubports/ubports-installer/issues"
         >a known bug</a
       >.
     </p>
     <p>
-      If your problem is not yet known, click the button below to report a new
-      bug.
+      如果还不知道你的问题, 点击反馈bug.
     </p>
     <pre>{errorData}</pre>
     {#if showNotLatestStable}
       <p>
-        You are not using the latest stable version of the UBports Installer.
+        你没有使用最新版的UBports Installer.
       </p>
     {/if}
     {#if showGenericUpdateInstructionsError}
       <p>
-        You can <a
+        你可以从<a
           href="https://github.com/ubports/ubports-installer/releases/latest"
-          >download the latest version from GitHub</a
+          >下载最新版</a
         >.
       </p>
     {/if}
     {#if showSnapUpdateInstructionsError}
       <p>
-        Run <code>snap refresh ubports-installer --stable</code> in your terminal
-        to install the latest version.
+        在终端运行 <code>snap refresh ubports-installer --stable</code> 安装最新版.
       </p>
     {/if}
     <p>
-      If you need help, you can join UBports' support channels on
+      如果你需要帮助可以加入我们的频道
       <a href="https://t.me/WelcomePlus">telegram</a>
-      or
+      或
       <a
         href="https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org"
         >matrix</a
       >
-      or ask a question
+      或者在论坛提问
       <a href="https://forums.ubports.com">in the forum</a>
-      or on
+      或
       <a href="https://askubuntu.com">askubuntu</a>.
     </p>
   </div>

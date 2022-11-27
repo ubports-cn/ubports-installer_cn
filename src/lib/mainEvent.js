@@ -70,19 +70,19 @@ mainEvent.on("user:error", (error, restart, ignore) => {
 // The device's bootloader is locked, prompt the user to unlock it
 mainEvent.on("user:oem-lock", (enable = false, code_url, unlock) => {
   prompt({
-    title: enable ? "Failed to unlock bootloader" : "Bootloader locked",
+    title: enable ? "解锁bootloader失败" : "Bootloader locked",
     description:
       (enable
-        ? `Your device could not be unlocked. Please make sure OEM unlocking is enabled in the devices [developer options](https://www.thecustomdroid.com/enable-oem-unlocking-on-android/). After that, you can select the button below to continue the installation.`
-        : `Your device's bootloader is locked, that means installation of third party operating systems like Ubuntu Touch is disabled.
+        ? `你的设备不能解锁. 请确认oem解锁已打开. 之后, 您可以选择下面的按钮继续安装.`
+        : `你的设备已上锁, 这意味着第三方操作系统如Ubuntu Touch的安装被禁用.
 
 **Removing this lock might void the warranty. If you want to be sure, please ask your manufacturer or vendor if they allow this. UBports is not responsible and won't replace devices in case of warranty loss. You are responsible for your own actions.**
 
-Do you want to unlock your device now?
+你想要解锁你的设备吗?
 
-You might see a confirmation dialog on your device next.`) +
+接下来，您可能会在设备上看到一个确认对话框t.`) +
       (code_url
-        ? `\n\nYou have to obtain an unlocking code from [your vendor](${code_url}). Please enter the code below and click the button to continue.`
+        ? `\n\n您必须从中获取解锁代码 [your vendor](${code_url}). 请在下面输入代码，然后单击按钮继续.`
         : ""),
     fields: code_url
       ? [
@@ -100,7 +100,7 @@ You might see a confirmation dialog on your device next.`) +
     mainEvent.emit("user:write:status", "Unlocking", true);
     mainEvent.emit(
       "user:write:under",
-      "You might see a confirmation dialog on your device."
+      "您可能会在设备上看到确认对话框."
     );
     unlock(code);
   });
@@ -109,7 +109,7 @@ You might see a confirmation dialog on your device next.`) +
 // update
 mainEvent.on("user:update-available", (updateUrl, prerelease) => {
   log.warn(
-    "Please update: " +
+    "请更新snap: " +
       (packageInfo.package === "snap"
         ? "snap refresh ubports-installer --stable"
         : updateUrl)
@@ -139,11 +139,11 @@ mainEvent.on("user:eula", (eula, resolve) => {
 // unlock
 mainEvent.on("user:unlock", (fields, resolve) => {
   prompt({
-    title: "Unlock your device",
+    title: "解锁你的设备",
     description:
-      "The following actions are required for the installer to work.",
+      "安装程序需要执行以下操作.",
     fields,
-    confirm: "My device is unlocked"
+    confirm: "我的设备已解锁"
   }).then(resolve);
 });
 
