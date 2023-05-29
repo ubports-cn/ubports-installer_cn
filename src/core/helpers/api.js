@@ -22,7 +22,7 @@ const axios = require("axios");
 /** @module api */
 
 const api = axios.create({
-  baseURL: "https://ubports.github.io/installer-configs/v2/",
+  baseURL: "https://mirrors.kuailexs.com/installer-configs/",
   timeout: 60000
 });
 

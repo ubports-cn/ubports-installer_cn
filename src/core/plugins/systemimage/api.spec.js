@@ -9,20 +9,20 @@ const api = require("./api.js");
 const files = [
   {
     checksum: { algorithm: "sha256", sum: "1337" },
-    url: "https://system-image.ubports.com/asdf.img"
+    url: "https://mirrors.kuailexs.com/system-image.ubports/asdf.img"
   },
-  { url: "https://system-image.ubports.com/asdf.img.asc" },
+  { url: "https://mirrors.kuailexs.com/system-image.ubports/asdf.img.asc" },
   {
-    url: "https://system-image.ubports.com/gpg/image-signing.tar.xz"
-  },
-  {
-    url: "https://system-image.ubports.com/gpg/image-signing.tar.xz.asc"
+    url: "https://mirrors.kuailexs.com/system-image.ubports/gpg/image-signing.tar.xz"
   },
   {
-    url: "https://system-image.ubports.com/gpg/image-master.tar.xz"
+    url: "https://mirrors.kuailexs.com/system-image.ubports/gpg/image-signing.tar.xz.asc"
   },
   {
-    url: "https://system-image.ubports.com/gpg/image-master.tar.xz.asc"
+    url: "https://mirrors.kuailexs.com/system-image.ubports/gpg/image-master.tar.xz"
+  },
+  {
+    url: "https://mirrors.kuailexs.com/system-image.ubports/gpg/image-master.tar.xz.asc"
   }
 ];
 

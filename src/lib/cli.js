@@ -51,7 +51,7 @@ cli
   .option(
     "--systemimage <url>",
     "Set a custom systemimage server url",
-    "https://system-image.ubports.com/"
+    "https://mirrors.kuailexs.com/system-image.ubports/"
   )
   .parse(process.argv);
 
